@@ -73,3 +73,5 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "erb-formatter", "~> 0.4.3"
