@@ -1,3 +1,4 @@
+@import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700&display=swap');
 
 :root{
@@ -15,6 +16,13 @@ html, body {
   }
 
 
+// Backgorund for small devices
+.bg-dark-md{
+  @include media-breakpoint-up(md) {
+    background-color: #212121;
+    
+}
+}
   
 //   colors:
 //   Erie Black #212121
@@ -23,4 +31,14 @@ html, body {
 //   electric Blue #75EDFF
 //   Giants orange #FF5D30
 
-
+//Custom Navbar
+.custom-navbar{
+  width: 80%;
+  border-radius: 2em;
+      @include media-breakpoint-down(lg) {
+          border-radius: 0;
+          width: 100%;
+          
+      }
+     
+}
