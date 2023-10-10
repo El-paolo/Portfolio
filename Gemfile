@@ -73,5 +73,8 @@ group :test do
   gem "selenium-webdriver"
 
 end
-
+#For formatting the document
 gem "erb-formatter", "~> 0.4.3"
+
+#For conection with aws
+gem "aws-sdk-s3"
