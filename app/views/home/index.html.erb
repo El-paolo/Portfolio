@@ -4,7 +4,7 @@
 
       <div class="col-md-4">
 
-        <%= image_tag @url , alt: "Paolo Cordova", class: "img-fluid rounded pb-3" %>
+        <%= image_tag @fotoPaolo , alt: "Paolo Cordova", class: "img-fluid rounded pb-3" %>
       </div>
       <div class="col-md-8">
         <h1>I am Paolo Cordova</h1>
@@ -72,4 +72,13 @@
     </div>
     </div>
     </div>
+    
+  <div class="row gy-4 gx-1">
+   <%= render partial: "shared/card", locals: { image_url: @js,
+   title: "Javascript",
+   alt_text: "js-svg",
+   description: "Am a advanced level developer in javascript lang including ecmascript 6+"
+   }
+  %>
+  </div>
 </section>
