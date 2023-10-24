@@ -35,50 +35,61 @@
 
 </section>
 
-<section class="my-4 py-4 container bg-dark-md rounded">
-  <h3 class="text-center py-3 " style="color:white;" >My technology Stack</h3>
-  <div class="row gy-4 gx-1">
-    <div class="col" >
-    <div class="card mx-auto " style="width: 15rem;">
-      <%= image_tag "js" %>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+<section class="my-4 py-4 container bg-dark-sm rounded">
+  <h3 class="text-center py-3 " style="color:white;" >My Main Skills</h3>
+  <div class="row gy-5 gx-1 gx-sm-3">
+    <div class="col-sm-6  col-lg-4" >
+   <%= render partial: "shared/card", locals: { image_url: @rails,
+   title: "Ruby On Rails",
+   alt_text: "Ruby-On-Rails-svg",
+   description: "I am developer scialized in rails development for web apps"
+   }
+  %>
     </div>
-    </div>
-  <div class="col" >
-    <div class="card mx-auto" style="width: 15rem;">
-      <%= image_tag @bootstrap %>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    </div>
-  <div class="col" >
-    <div class="card mx-auto " style="width: 15rem;">
-      <%= image_tag "js" %>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-  <div class="row gy-4 gx-1">
+  <div div class="col-sm-6  col-lg-4" >
+   <%= render partial: "shared/card", locals: { image_url: @conversation,
+   title: "Social skills",
+   alt_text: "conversation-svg",
+
+   }
+  %>
+  </div>
+  <div class="col-sm-6 col-lg-4" >
    <%= render partial: "shared/card", locals: { image_url: @js,
    title: "Javascript",
-   alt_text: "js-svg",
+   alt_text: "javascript-svg",
+
+   }
+  %>
+    </div>
+  <div class="col-sm-6 col-lg-4" >
+   <%= render partial: "shared/card", locals: { image_url: @bootstrap,
+   title: "Bootstrap",
+   alt_text: "Bootstrap-svg",
+
+   }
+  %>
+  </div>
+  <div class="col-sm-6  col-lg-4" >
+   <%= render partial: "shared/card", locals: { image_url: @postgresql,
+   title: "PostgreSQL",
+   alt_text: "postgresql-svg",
+
+   }
+  %>
+    </div>
+    <div class="col-sm-6  col-lg-4">
+   <%= render partial: "shared/card", locals: { image_url: @git,
+   title: "Git",
+   alt_text: "github-svg",
    description: "Am a advanced level developer in javascript lang including ecmascript 6+"
    }
   %>
   </div>
+  
+  
+
+    
+
+
 </section>

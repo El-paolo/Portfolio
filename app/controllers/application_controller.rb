@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
     def set_photo_keys
       @photo_keys = [
         'bootstrap.svg', 'github.svg', 'rails.svg', 'js.svg',
-        'linkedin.svg', 'postgresql.svg', 'fotoPaolo.jpg'
+        'linkedin.svg', 'postgresql.svg', 'fotoPaolo.jpg', 'conversation.svg',
+        'git.svg'
       ]
     end
   
