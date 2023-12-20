@@ -1,8 +1,8 @@
-    <div class="card mx-auto tilt " style="width: 15rem;">
+    <div class="card mx-auto tilt " style="width: 15rem;" data-controller="card" data-card-target="card" data-action="mouseover->card#mouseover"  >
     <%= image_tag image_url , alt: alt_text , class: "card-img-top" %>
-      <div class="card-body d-flex flex-column align-items-center ">
+      <div class="card-body d-flex flex-column align-items-center" >
         <h5 class="card-title "><%= title %></h5>
-        <p class="card-text text-center hidden" ><%= description %></p>
-        <a class="btn btn-primary show">Go somewhere</a>
+        <p class="card-text text-center hidden"  data-card-target="text" ><%= description %></p>
+        <a class="btn btn-primary show"  data-action="click->card#opennclose" >Go somewhere</a>
       </div>
     </div>
