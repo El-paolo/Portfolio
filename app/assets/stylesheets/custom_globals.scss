@@ -8,9 +8,11 @@
 html, body {
     height: 100%;  /* Asegurarse de que html y body ocupen toda la altura */
     margin: 0;  /* Eliminar márgenes predeterminados */
-    background: #C02425;  /* fallback para navegadores antiguos */
-    background: -webkit-linear-gradient(to top, #C02425,  #F0CB35);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top,#C02425,#F0CB35);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(1,57,27);
+    background: -moz-radial-gradient(circle, rgba(1,57,27,1) 1%, rgba(233,214,148,0.9037815809917717) 67%);
+    background: -webkit-radial-gradient(circle, rgba(1,57,27,1) 1%, rgba(233,214,148,0.9037815809917717) 67%);
+    background: radial-gradient(circle, rgba(1,57,27,1) 1%, rgba(233,214,148,0.9037815809917717) 67%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01391b",endColorstr="#e9d694",GradientType=1); 
     background-attachment: fixed;  /* Fijar el fondo */
     background-size: 100% 100%;  /* Hacer que el fondo ocupe todo el espacio */
   }
@@ -47,4 +49,9 @@ html, body {
 .tilt{
   transition: all 0.1s ease;
   cursor: pointer;
+}
+
+//lists
+ul{
+  list-style-type: none;
 }

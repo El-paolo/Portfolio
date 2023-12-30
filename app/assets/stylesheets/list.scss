@@ -1,0 +1,47 @@
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0) scale(1) ;
+    }
+
+    to{
+        transform: translateY(-5px) scale(1.25) ;
+    }
+}
+
+@keyframes slideUp-reverse {
+    from {
+        transform: translateY(-5px) scale(1.25);
+    }
+
+    to{
+        transform: translate(0px) scale(1);
+    }
+}
+
+
+
+
+
+.slideUp:hover{
+    cursor:pointer;
+    animation-name: slideUp;
+    animation-duration: 0.8s ;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.slideUp{
+    cursor:pointer;
+    animation-name: slideUp-reverse;
+    animation-duration: 0.8s ;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+}
+
+
