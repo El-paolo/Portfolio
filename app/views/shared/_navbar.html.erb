@@ -8,21 +8,19 @@
       <div class="navbar-nav container d-flex justify-content-around">
        <%= link_to "About", root_path, class: "nav-link #{'active' if current_page?(root_path)}"  %>
        <%= link_to "Contact", contact_path, class: "nav-link #{'active' if current_page?(contact_path)}" %>
+       <%= link_to "Projects", projects_path, class: "nav-link #{'active' if current_page?(projects_path)}" %>
+       
+        
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Socials
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://github.com/El-paolo"><%= image_tag @github , alt: "svg-linkedin" , class: "icon" %>Github </a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="www.linkedin.com/in/paolo-cordova-miranda"><%= image_tag @linkedin , alt: "svg-linkedin" , class: "icon" %>LinkedIn</a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="#"><%= image_tag @github , alt: "svg-linkedin" , class: "icon" %>Vercel</a></li>
           </ul>
         </li>
-
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
