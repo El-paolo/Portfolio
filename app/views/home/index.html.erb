@@ -8,14 +8,14 @@
       </div>
       <div class="col-md-8">
         <h1>I am Paolo Cordova</h1>
-          <p>
+          <p class="fw-semibold" >
           A full-stack force of nature, I craft dynamic websites with the precision of a seasoned developer and the curiosity of a physics whiz.
           My current thesis on a physics engineering degree hones my ability to tackle complex problems head-on,
           while my mastery of Ruby on Rails, Javascript, and Postgresql lets me translate that problem-solving prowess into beautifully functional creations.
           This very website, built with my own two hands, serves as a testament to my full-stack expertise. I'm not just code and algorithms, though; I'm an API whisperer, an AWS guru, and a certified brainiac with a passion for building awesome things.
           So, if you're looking for a developer who can think outside the box, code inside the lines, and bring your vision to life, look no further! Let's build something extraordinary together.        
           </p>
-          <p>
+          <p class="fw-semibold" >
           Como una fuerza de la naturaleza completa, creo sitios web dinámicos con la precisión de un desarrollador experimentado y la curiosidad de un físico.
           Mi tesis actual en una carrera de ingeniería física perfecciona mi capacidad para abordar problemas complejos de frente,
           mientras que mi dominio de Ruby on Rails, Javascript y Postgresql me permite traducir esa destreza para resolver problemas en creaciones bellamente funcionales.
@@ -36,33 +36,33 @@
    <%= render partial: "shared/card", locals: { image_url: @rails,
    title: "Ruby On Rails",
    alt_text: "Ruby-On-Rails-svg",
-   description: "I am software developer specialized in RoR development for web apps, I have a bootcamp certification of 460 hrs besides this site that is built with RoR "
+   description: "This site is fully built with Ruby On Rails, my main tech but not the only tool i've worked."
    }
   %>
     </div>
   <div div class="col-sm-6  col-lg-4" >
-   <%= render partial: "shared/card", locals: { image_url: @conversation,
-   title: "Social skills",
+   <%= render partial: "shared/card", locals: { image_url: @js,
+   title: "Javascript",
    alt_text: "conversation-svg",
-   description: "I am developer scialized in rails development for web apps"
+   description: "Javascript is other of my main skills, focused on good practices some animations and functionalitys were made with javascript(see documentation)."
 
    }
   %>
   </div>
   <div class="col-sm-6 col-lg-4" >
-   <%= render partial: "shared/card", locals: { image_url: @js,
-   title: "Javascript",
-   alt_text: "javascript-svg",
-   description: "I am developer scialized in rails development for web apps"
+   <%= render partial: "shared/card", locals: { image_url: @bootstrap,
+   title: "Boostrap",
+   alt_text: "Bootrap-svg",
+   description: "Styled mainly with Boostrap, Css and Sass. You can get pretty good design"
 
    }
   %>
     </div>
   <div class="col-sm-6 col-lg-4" >
-   <%= render partial: "shared/card", locals: { image_url: @bootstrap,
-   title: "Bootstrap",
-   alt_text: "Bootstrap-svg",
-   description: "I am developer scialized in rails development for web apps"
+   <%= render partial: "shared/card", locals: { image_url: @aws,
+   title: "Amazon Web Services",
+   alt_text: "Amazon-web-services-svg",
+   description: "The images in this site are hosted on amazon web services and are requested from the api system of AWS."
 
    }
   %>
@@ -71,7 +71,7 @@
    <%= render partial: "shared/card", locals: { image_url: @postgresql,
    title: "PostgreSQL",
    alt_text: "postgresql-svg",
-   description: "I am developer scialized in rails development for web apps"
+   description: "Used Postgresql for the data base"
 
    }
   %>
@@ -80,7 +80,7 @@
    <%= render partial: "shared/card", locals: { image_url: @git,
    title: "Git",
    alt_text: "github-svg",
-   description: "Am a advanced level developer in javascript lang including ecmascript 6+"
+   description: "Use git for good project managment "
    }
   %>
   </div>
