@@ -88,4 +88,4 @@ production:
   database: Portfolio_production
   username: Portfolio
   password: <%= ENV["PORTFOLIO_DATABASE_PASSWORD"] %>
-  url: <%='ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
