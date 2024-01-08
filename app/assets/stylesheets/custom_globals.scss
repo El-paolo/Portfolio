@@ -5,6 +5,7 @@
     --bs-body-font-family: 'Gabarito', 'Helvetica Neue', sans-serif;
     --dark: #212121;
 }
+//gradient color background
 html, body {
   background: rgb(148,222,233);
   background: -moz-linear-gradient(90deg, rgba(148,222,233,1) 0%, rgba(33,119,91,0.8813726174063375) 50%, rgba(216,252,69,0.46680679107580536) 100%);
@@ -12,22 +13,7 @@ html, body {
   background: linear-gradient(90deg, rgba(148,222,233,1) 0%, rgba(33,119,91,0.8813726174063375) 50%, rgba(216,252,69,0.46680679107580536) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#94dee9",endColorstr="#d8fc45",GradientType=1); 
   }
-
-
-// Backgorund for small devices
-.bg-dark-md{
-  @include media-breakpoint-up(md) {
-    background-color: #212121;
-    
-}
-}
   
-//   colors:
-//   Erie Black #212121
-//   Jonquil #F0CB35
-//   fire engine red #C02425
-//   electric Blue #75EDFF
-//   Giants orange #FF5D30
 
 //Custom Navbar
 .custom-navbar{
@@ -47,21 +33,28 @@ html, body {
   cursor: pointer;
 }
 
-//lists
+//tags
+
 ul{
   list-style-type: none;
 }
 
+a{
+  text-decoration: none;
+}
+
+//icons for the navbar socials
 .icon{
   width: 20px;
   height: 20px;
   padding: 2px;
 }
 
+//contact container
 .contact{
   color: white;
 }
-
+//linkedIn svg social
 .linkedinsvg{
   
   width: 20px;
@@ -70,9 +63,8 @@ ul{
   margin: 0 0 2px 0;
 
 }
+//keywords
 
-.link-project{
-  text-decoration: none;
-  
-  
+.keywords{
+  color:#04e9e9
 }

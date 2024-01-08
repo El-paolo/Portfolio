@@ -12,9 +12,14 @@
  *
  *= require_tree .
  *= require_self
- */
-
+*/
 @import "bootstrap";
-@import "navbar";
+//Global customization as colors, fonts, links, tags, animation, navbar 
 @import "custom_globals";
+//Cards styles 
 @import "card";
+//List of soft skills styles
+@import "list"
+ 
+
+ 
