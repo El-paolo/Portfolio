@@ -1,5 +1,8 @@
 # This class makes the photos hosted on AWS available.
 class ApplicationController < ActionController::Base
+    
+    #configuration for amazon request, setting parameters and setting names of pictures in the bucket 
+    
     before_action :set_photo_keys
     before_action :get_photo_urls
   

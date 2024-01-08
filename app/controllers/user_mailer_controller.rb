@@ -1,5 +1,5 @@
 class UserMailerController < ApplicationController
-    
+    #functionality as mediatory between the request for sending in ./contact_controller.rb and the form in ../views/contact/index.html.erb
   def send_cv
     email = params[:email] # gets email parameter from the form
     file_key = 'Paolo-Cordova.pdf' # Gets static name of the file
