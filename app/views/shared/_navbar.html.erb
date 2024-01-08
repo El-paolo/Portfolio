@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg shadow border bg-dark mb-5 mt-lg-4 py-xs-3 py-sm-3 py-lg-2 mx-auto custom-navbar" data-bs-theme="dark">
   <div class="container px-lg-5">
-    <h1 class="navbar-brand" >Paolo's<span> Dev</span><span> Portfolio</span></h1>
+    <%= link_to "Paolo's Dev Portfolio" , root_path, class:'navbar-brand' %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,9 +16,9 @@
             Socials
           </a>
           <ul class="dropdown-menu">
-            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://github.com/El-paolo"><%= image_tag @github , alt: "svg-linkedin" , class: "icon" %>Github </a></li>
-            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://www.linkedin.com/in/paolo-cordova-miranda/"><%= image_tag @linkedin , alt: "svg-linkedin" , class: "icon" %>LinkedIn</a></li>
-            <li class="d-flex align-items-center"><a class="dropdown-item" href="#"><%= image_tag @github , alt: "svg-linkedin" , class: "icon" %>Vercel</a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://github.com/El-paolo"><%= image_tag @githubWhite , alt: "svg-linkedin" , class: "icon" %>Github </a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://www.linkedin.com/in/paolo-cordova-miranda/" ><%= image_tag @linkedin , alt: "svg-linkedin" , class: "linkedinsvg " %>LinkedIn</a></li>
+            <li class="d-flex align-items-center"><a class="dropdown-item" href="https://vercel.com/el-paolo"><%= image_tag @vercel , alt: "svg-linkedin" , class: "icon" %>Vercel</a></li>
           </ul>
         </li>
       </div>

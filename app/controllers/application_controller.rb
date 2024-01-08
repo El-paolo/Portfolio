@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
       @photo_keys = [
         'bootstrap.svg', 'github.svg', 'rails.svg', 'js.svg',
         'linkedin.svg', 'postgresql.svg', 'fotoPaolo.jpg', 'conversation.svg',
-        'git.svg', 'aws.svg'
+        'git.svg', 'aws.svg', 'vercel.svg', 'githubWhite.svg'
       ]
     end
   
